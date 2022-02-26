@@ -5,9 +5,9 @@
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/home.jpeg);
+    background-image: linear-gradient(rgba(48, 47, 46, 0.74), rgba(92, 89, 86, 0.603)), url(images/headshots.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -46,7 +46,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #e04d08;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -89,18 +89,18 @@ nav img{
 }
 
 .hero-btn:hover{
-    bordeR: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #e04d08;
+    background: #e04d08;
     transition: .5s;
 }
 
-/* --- course */
+/* --- sponsor */
 
-.course{
-    width: 80%;
+.sponsors{
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 h1{
@@ -122,9 +122,9 @@ p{
     justify-content: space-between;
 }
 
-.course-col{
+.sponsor-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #ffffff;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -138,6 +138,37 @@ h3{
     margin: 10px 0;
 }
 
-.course-col:hover{
+.sponsor-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+/* Interviews page */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(48, 47, 46, 0.74), rgba(48, 47, 46, 0.74)), url(images/interview.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 40px;
+}
+
+.file-upload{
+    background-position: center;
 }
