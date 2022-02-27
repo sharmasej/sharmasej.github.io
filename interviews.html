@@ -21,10 +21,10 @@
                 <a href="index.html"><img src="images/swe-trans.png"></a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">STATISTICS</a></li>
-                        <li><a href="">INTERVIEWS</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="statistics.html">STATISTICS</a></li>
+                        <li><a href="interviews.html">INTERVIEWS</a></li>
                         <li><a href="">FAQ</a></li>
                     </ul>
                 </div>
@@ -106,16 +106,10 @@
                     <input type="file" id="file-id" name="file_name" onchange="ExtractText();">
                 </div>
                 <br>
+
+                
                
                 <input type="submit" value="Submit Application">
-
-                <!-- <div id="output"></div> -->
-                <!-- <div id="tester"></div> -->
-
-                <div id="fo"></div>
-                <div id="leo"></div>
-                <div id="lao"></div>
-                <div id="co"></div>
 
             </form>
               
@@ -222,6 +216,10 @@
 
                         //array of key words to search for
                         const keywords = ["artifical", "intelligence", "data", "science", "networks", "cloud", "machine", "learning", "algorithms", "graphics", "security", "cyber-security", "quantum", "java", "c++", "python", "sql", "javascript", "html", "css","manage","led", "leader", "president", "vice-president", "officer", "lead", "google", "amazon", "apple", "facebook","qualtrics", "microsoft", "netflix", "meta", "react", "typescript", "assembly"];
+                        var fvar = document.getElementById("fdiv");
+                        var levar = document.getElementById("lediv");
+                        var lavar = document.getElementById("ladiv");
+                        var cvar = document.getElementById("cdiv");
 
                     for (var pageNum = 0; pageNum < pagesText.length; pageNum++)
                     {
@@ -255,44 +253,39 @@
                     const leops = ["manage","led", "leader", "president", "vice-president", "officer", "lead"];
                     const cops = ["google", "amazon", "apple", "facebook","qualtrics", "microsoft", "netflix", "meta"];
 
-                    var fields_output = document.getElementById("fo");
-                    var languages_output = document.getElementById("lao");
-                    var leadership_output = document.getElementById("leo");
-                    var companies_output = document.getElementById("co");
-
                     //remove puncuation
 
                     for(var s = 0; s < keywords_found.length; s++)
                     {
                         var word = keywords_found[s];
-
+                        // tester.innerHTML += word;
                         if(fops.includes(word))
                         {
-                            fields.push(word);
-                            fields_output.innerHTML += word;
-                            fields_output.innerHTML += "<br>";
+                            // fields.push(word);
+                            fvar.innerHTML += word;
+                            fvar.innerHTML += "<br/>";
                         }
 
                         if(laops.includes(word))
                         {
-                            languages.push(word);
-                            languages_output.innerHTML += word;
-                            languages_output.innerHTML += "<br>";
+                            // languages.push(word);
+                            lavar.innerHTML += word;
+                            lavar.innerHTML += "<br/>";
                         }
 
                         if(leops.includes(word))
                         {
-                            leadership.push(word);
-                            leadership_output.innerHTML += word;
-                            leadership_output.innerHTML += "<br>";
+                            // leadership.push(word);
+                            levar.innerHTML += word;
+                            levar.innerHTML += "<br/>";
                         }
 
-                        if(cops.includes(word))
-                        {
-                            companies.push(word);
-                            companies_output.innerHTML += word;
-                            companies_output.innerHTML += "<br>";
-                        }
+                        // if(cops.includes(word))
+                        // {
+                        //     // companies.push(word);
+                        //     cvar.innerHTML += word;
+                        //     cvar.innerHTML += "<br/>";
+                        // }
                     }
                         //artificial intelligence
                         //data science
