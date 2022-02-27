@@ -156,7 +156,7 @@ h3{
 
 /* Interviews page */
 .sub-header{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     background-image: linear-gradient(rgba(48, 47, 46, 0.74), rgba(48, 47, 46, 0.74)), url(images/interview.png);
     background-position: center;
@@ -169,6 +169,23 @@ h3{
     margin-top: 40px;
 }
 
-.file-upload{
+.choose-file{
     background-position: center;
+}
+
+.candidate{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+form{
+    text-align: center;
+    margin: auto;
 }
